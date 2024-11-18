@@ -1,0 +1,52 @@
+/* Globales Styling */
+body {
+	margin: 0;
+	padding-top: 110px; /* Platz für den fixierten Header, Höhe anpassen falls nötig */
+	font-family: "Roboto", sans-serif;
+}
+
+/* Fixierter Header */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #333; /* Hintergrundfarbe ändern */
+	color: #ffcc00; /* Textfarbe ändern */
+	padding: 1.5rem; /* Padding vergrößern */
+	z-index: 1000;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Schatten vergrößern */
+}
+
+header h1 {
+	margin: 0;
+	font-size: 1.5rem;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	gap: 1rem;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+/* Standard-Layout für Karten in 4 Spalten */
+.grid-layout {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr); /* 4 Spalten */
+	gap: 1rem;
+	padding: 1rem;
+}
+
+/* Responsive Umschaltung auf 1 Spalte bei schmaleren Bildschirmen */
+@media (max-width: 768px) {
+	.grid-layout {
+		grid-template-columns: 1fr; /* 1 Spalte bei kleineren Bildschirmen */
+	}
+}

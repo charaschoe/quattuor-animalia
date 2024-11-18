@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Wilde-Tiere-Quartett</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+
+		<link
+			rel="stylesheet"
+			href="css/desktop.css"
+			media="screen and (min-width: 768px)"
+		/>
+		<link
+			rel="stylesheet"
+			href="css/mobile.css"
+			media="screen and (max-width: 767px)"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+		/>
+	</head>
+	<body>
+		<header>
+			<h1>Quattuor Animalia: Ein Kartenspiel mit Wilden Tieren</h1>
+			<nav>
+				<ul>
+					<li><a href="#" id="group-toggle">Home</a></li>
+					<li><a href="#" id="home-link">REMIX</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main id="card-container" class="grid-layout"></main>
+		<script src="main.js"></script>
+		<script>
+			$(document).ready(function () {
+				$("#group-toggle").on("click", function () {
+					$("body").toggleClass("dark-mode");
+				});
+
+				$("#home-link").on("click", function () {
+					confetti({
+						particleCount: 100,
+						spread: 70,
+						origin: { y: 0.6 },
+					});
+				});
+			});
+		</script>
+	</body>
+</html>
