@@ -1,4 +1,3 @@
-
 🌟 Welcome to **quattuor-animalia**! 🌟
 
 ## 🐾 About the Project
