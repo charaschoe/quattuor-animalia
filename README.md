@@ -1,59 +1,87 @@
-🌟 Welcome to **quattuor-animalia**! 🌟
+# 🎴 Quattuor Animalia
 
-## 🐾 About the Project
-**quattuor-animalia** is a project dedicated to exploring the fascinating world of animals. From the tiniest insects to the largest mammals, we cover it all!
+## 🐾 Über das Projekt
 
-## 🚀 Getting Started
-To get a local copy up and running, follow these simple steps.
+**Quattuor Animalia** ist ein interaktives Quartett-Kartenspiel mit wilden Tieren. Das Projekt wurde als Webentwicklungsübung erstellt und demonstriert responsive Webdesign sowie moderne JavaScript-Funktionalitäten.
 
-### Prerequisites
-- Python
-- pip
-- jQuery/JavaScript
-- A code editor
+## 🎯 Features
 
-### Installation
-1. Clone the repo
-    ```sh
-    git clone https://github.com/your_username_/quattuor-animalia.git
+-   32 einzigartige Tierkarten
+-   Responsive Design für Mobile und Desktop
+-   Dynamische Kartengenerierung aus JSON-Daten
+-   Interaktive Karteneffekte beim Hover
+-   Remix-Funktion mit Konfetti-Animation
+-   Verwendung von CSS Grid und Flexbox
+-   Google Fonts Integration
+
+## 🛠️ Technologien
+
+-   HTML5
+-   CSS3 (Grid & Flexbox)
+-   JavaScript/jQuery
+-   JSON für Datenspeicherung
+
+## 📱 Responsive Design
+
+Das Projekt bietet zwei optimierte Ansichten:
+
+-   **Mobile**: Karten werden in einer einzelnen Spalte angezeigt
+-   **Desktop**: Karten werden in Vierergruppen präsentiert
+
+## 🎮 Verwendung
+
+1. Öffnen Sie `index.html` in einem modernen Webbrowser
+2. Erkunden Sie die Tierkarten durch Hover-Effekte
+3. Nutzen Sie die Remix-Funktion für eine zufällige Neuanordnung der Karten
+
+## 💻 Projektstruktur
+
+```
+quattuor-animalia/
+├── index.html
+├── card.html
+├── css/
+│   ├── style.css
+│   ├── mobile.css
+│   └── desktop.css
+└── animaldata.json
+```
+
+## 🎨 Design
+
+-   Responsive Layout mit CSS Grid und Flexbox
+-   Eingebettete Google Fonts für modernes Typografie-Design
+-   Interaktive Hover-Effekte auf den Karten
+-   Konfetti-Animation bei der Remix-Funktion
+
+## 🤝 Mitwirken
+
+Verbesserungsvorschläge sind willkommen! Öffnen Sie gerne einen Issue oder Pull Request.
+
+## OpenWeather API Integration
+
+Das Spiel verwendet die OpenWeather API, um aktuelle Temperaturdaten für die Lebensräume der Tiere anzuzeigen.
+
+### Setup
+
+1. Registrieren Sie sich für einen kostenlosen API-Key bei [OpenWeather](https://openweathermap.org/api)
+2. Erstellen Sie eine `.env` Datei im Root-Verzeichnis
+3. Fügen Sie Ihren API-Key wie folgt ein:
     ```
-2. Install Python packages
-    ```sh
-    pip install -r requirements.txt
+    OPENWEATHER_API_KEY=IhrAPIKey
     ```
 
-## 📦 Deployment
-This project is hosted on Vercel. To deploy your own copy, follow these steps:
+### Funktionsweise
 
-1. Create a Vercel account at [vercel.com](https://vercel.com).
-2. Install the Vercel CLI
-    ```sh
-    npm install -g vercel
-    ```
-3. Deploy the project
-    ```sh
-    vercel
-    ```
+-   Jedes Tier in der `animaldata.json` hat eine `habitat_city`
+-   Die API ruft die aktuelle Temperatur dieser Stadt ab
+-   Die Temperatur wird in der oberen rechten Ecke jeder Karte angezeigt
+-   Die Daten werden beim Laden der Seite aktualisiert
 
-## 🤝 Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+### Verwendete API-Endpunkte
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 🦧 Wild Animal Quartet
-### Task
-Create a website that displays all 32 cards of an animal quartet. This website includes the following features:
-- Common website elements (header, etc.)
-- The animal data is loaded from a JSON file, and the cards are created via script for each entry in the dataset. You can choose to use jQuery for this.
-- The website uses both CSS grid and flexbox. Additionally, a Google Font is embedded.
-- The website is responsive (2 views, two CSS files).
-  - In the mobile view, all cards are displayed in a single column. The layout is optimized for mobile devices.
-  - In the desktop view, the cards are displayed differently (e.g., in groups of 4). The layout is noticeably different from the mobile view.
-
-### Remix Function
-Try out the **Remix** function to see the cards in action with confetti effects! Hover over the cards to interact and see them come to life.
-
+-   Current Weather Data API: `https://api.openweathermap.org/data/2.5/weather`
+-   Parameter:
+    -   `q`: Stadtname
+    -   `units`: metric (für Celsius)
+    -   `appid`: API-Key

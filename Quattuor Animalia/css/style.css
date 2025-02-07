@@ -35,6 +35,8 @@
 .card-wrapper {
 	width: 100%;
 	transition: transform 0.3s ease;
+	position: relative;
+	overflow: hidden;
 }
 
 .card-wrapper::before {
@@ -52,6 +54,7 @@
 	);
 	transform: skewX(-25deg);
 	transition: left 0.5s;
+	z-index: 2;
 }
 
 .card-wrapper:hover::before {
@@ -63,6 +66,7 @@
 }
 
 .card-content {
+	position: relative;
 	background-color: var(--card-background-color);
 	display: grid;
 	overflow: hidden;
@@ -200,4 +204,46 @@
 }
 .group-h ~ .stat-box .stat-icon {
 	background-color: color-mix(in srgb, var(--group-h-color) 30%, white);
+}
+
+.weather-box {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	color: white;
+	font-weight: 700;
+	font-size: 1.5rem;
+	z-index: 1;
+}
+
+.temperature-text {
+	font-weight: bold;
+}
+
+.group-a ~ .weather-box {
+	background-color: var(--group-a-color);
+}
+.group-b ~ .weather-box {
+	background-color: var(--group-b-color);
+}
+.group-c ~ .weather-box {
+	background-color: var(--group-c-color);
+}
+.group-d ~ .weather-box {
+	background-color: var(--group-d-color);
+}
+.group-e ~ .weather-box {
+	background-color: var(--group-e-color);
+}
+.group-f ~ .weather-box {
+	background-color: var(--group-f-color);
+}
+.group-g ~ .weather-box {
+	background-color: var(--group-g-color);
+}
+.group-h ~ .weather-box {
+	background-color: var(--group-h-color);
 }

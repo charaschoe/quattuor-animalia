@@ -17,7 +17,8 @@
 		"max_length": 250,
 		"litter_size": 4,
 		"continents": "Africa, Asia",
-		"intelligence": 8
+		"intelligence": 8,
+		"habitat_city": "Nairobi"
 	},
 	{
 		"id": 2,
@@ -36,7 +37,8 @@
 		"max_length": 150,
 		"litter_size": 5,
 		"continents": "Africa, Asia",
-		"intelligence": 5
+		"intelligence": 5,
+		"habitat_city": "Windhoek"
 	},
 	{
 		"id": 3,
@@ -55,7 +57,8 @@
 		"max_length": 290,
 		"litter_size": 4,
 		"continents": "Asia",
-		"intelligence": 7
+		"intelligence": 7,
+		"habitat_city": "Mumbai"
 	},
 	{
 		"id": 4,
@@ -74,7 +77,8 @@
 		"max_length": 160,
 		"litter_size": 3,
 		"continents": "Africa, Asia",
-		"intelligence": 7
+		"intelligence": 7,
+		"habitat_city": "Addis Ababa"
 	},
 	{
 		"id": 5,
@@ -93,7 +97,8 @@
 		"max_length": 15,
 		"litter_size": 1840,
 		"continents": "Americas",
-		"intelligence": 2
+		"intelligence": 2,
+		"habitat_city": "Manaus"
 	},
 	{
 		"id": 6,
@@ -112,7 +117,8 @@
 		"max_length": 21,
 		"litter_size": 50,
 		"continents": "all",
-		"intelligence": 2
+		"intelligence": 2,
+		"habitat_city": "Cairo"
 	},
 	{
 		"id": 7,
@@ -131,7 +137,8 @@
 		"max_length": 1,
 		"litter_size": 400,
 		"continents": "all",
-		"intelligence": 1
+		"intelligence": 1,
+		"habitat_city": "Lagos"
 	},
 	{
 		"id": 8,
@@ -150,7 +157,8 @@
 		"max_length": 6,
 		"litter_size": 35,
 		"continents": "Americas",
-		"intelligence": 2
+		"intelligence": 2,
+		"habitat_city": "Bogota"
 	},
 	{
 		"id": 9,
@@ -169,7 +177,8 @@
 		"max_length": 610,
 		"litter_size": 80,
 		"continents": "Africa, Asia, Americas, Oceania",
-		"intelligence": 4
+		"intelligence": 4,
+		"habitat_city": "Darwin"
 	},
 	{
 		"id": 10,
@@ -188,7 +197,8 @@
 		"max_length": 550,
 		"litter_size": 40,
 		"continents": "Africa, Asia",
-		"intelligence": 4
+		"intelligence": 4,
+		"habitat_city": "Bangkok"
 	},
 	{
 		"id": 11,
@@ -207,7 +217,8 @@
 		"max_length": 300,
 		"litter_size": 30,
 		"continents": "Asia",
-		"intelligence": 3
+		"intelligence": 3,
+		"habitat_city": "Jakarta"
 	},
 	{
 		"id": 12,
@@ -226,7 +237,8 @@
 		"max_length": 130,
 		"litter_size": 14,
 		"continents": "Americas",
-		"intelligence": 3
+		"intelligence": 3,
+		"habitat_city": "Quito"
 	},
 	{
 		"id": 13,
@@ -245,7 +257,8 @@
 		"max_length": 450,
 		"litter_size": 15000000,
 		"continents": "",
-		"intelligence": 4
+		"intelligence": 4,
+		"habitat_city": "Miami"
 	},
 	{
 		"id": 14,
@@ -264,7 +277,8 @@
 		"max_length": 90,
 		"litter_size": 20,
 		"continents": "",
-		"intelligence": 1
+		"intelligence": 1,
+		"habitat_city": "Manila"
 	},
 	{
 		"id": 15,
@@ -283,7 +297,8 @@
 		"max_length": 1400,
 		"litter_size": 10000000,
 		"continents": "",
-		"intelligence": 6
+		"intelligence": 6,
+		"habitat_city": "Wellington"
 	},
 	{
 		"id": 16,
@@ -302,7 +317,8 @@
 		"max_length": 360,
 		"litter_size": 1,
 		"continents": "Americas, Europe, Asia",
-		"intelligence": 6
+		"intelligence": 6,
+		"habitat_city": "Anchorage"
 	},
 	{
 		"id": 17,
@@ -321,7 +337,8 @@
 		"max_length": 1450,
 		"litter_size": 300,
 		"continents": "",
-		"intelligence": 4
+		"intelligence": 4,
+		"habitat_city": "Male"
 	},
 	{
 		"id": 18,
@@ -340,7 +357,8 @@
 		"max_length": 600,
 		"litter_size": 14,
 		"continents": "",
-		"intelligence": 5
+		"intelligence": 5,
+		"habitat_city": "Cape Town"
 	},
 	{
 		"id": 19,
@@ -359,7 +377,8 @@
 		"max_length": 3360,
 		"litter_size": 1,
 		"continents": "",
-		"intelligence": 8
+		"intelligence": 8,
+		"habitat_city": "Reykjavik"
 	},
 	{
 		"id": 20,
@@ -378,7 +397,8 @@
 		"max_length": 950,
 		"litter_size": 1,
 		"continents": "",
-		"intelligence": 10
+		"intelligence": 10,
+		"habitat_city": "Vancouver"
 	},
 	{
 		"id": 21,
@@ -397,7 +417,8 @@
 		"max_length": 750,
 		"litter_size": 1,
 		"continents": "Africa, Asia",
-		"intelligence": 10
+		"intelligence": 10,
+		"habitat_city": "Colombo"
 	},
 	{
 		"id": 22,
@@ -416,7 +437,8 @@
 		"max_length": 340,
 		"litter_size": 1,
 		"continents": "Africa, Asia, Americas",
-		"intelligence": 5
+		"intelligence": 5,
+		"habitat_city": "Serengeti"
 	},
 	{
 		"id": 23,
@@ -435,7 +457,8 @@
 		"max_length": 340,
 		"litter_size": 2,
 		"continents": "Americas, Europe, Asia",
-		"intelligence": 7
+		"intelligence": 7,
+		"habitat_city": "Nuuk"
 	},
 	{
 		"id": 24,
@@ -454,7 +477,8 @@
 		"max_length": 500,
 		"litter_size": 1,
 		"continents": "Africa",
-		"intelligence": 5
+		"intelligence": 5,
+		"habitat_city": "Kampala"
 	},
 	{
 		"id": 25,
@@ -473,7 +497,8 @@
 		"max_length": 180,
 		"litter_size": 1,
 		"continents": "Africa",
-		"intelligence": 9
+		"intelligence": 9,
+		"habitat_city": "Kigali"
 	},
 	{
 		"id": 26,
@@ -492,7 +517,8 @@
 		"max_length": 300,
 		"litter_size": 3,
 		"continents": "Americas, Europe, Asia",
-		"intelligence": 7
+		"intelligence": 7,
+		"habitat_city": "Anchorage"
 	},
 	{
 		"id": 27,
@@ -511,7 +537,8 @@
 		"max_length": 600,
 		"litter_size": 1,
 		"continents": "Africa",
-		"intelligence": 4
+		"intelligence": 4,
+		"habitat_city": "Nairobi"
 	},
 	{
 		"id": 28,
@@ -530,7 +557,8 @@
 		"max_length": 160,
 		"litter_size": 6,
 		"continents": "Americas, Europe, Asia",
-		"intelligence": 9
+		"intelligence": 9,
+		"habitat_city": "Yellowstone"
 	},
 	{
 		"id": 29,
@@ -549,7 +577,8 @@
 		"max_length": 280,
 		"litter_size": 16,
 		"continents": "Africa",
-		"intelligence": 4
+		"intelligence": 4,
+		"habitat_city": "Windhoek"
 	},
 	{
 		"id": 30,
@@ -568,7 +597,8 @@
 		"max_length": 114,
 		"litter_size": 5,
 		"continents": "all",
-		"intelligence": 6
+		"intelligence": 6,
+		"habitat_city": "New York"
 	},
 	{
 		"id": 31,
@@ -587,7 +617,8 @@
 		"max_length": 350,
 		"litter_size": 1,
 		"continents": "all",
-		"intelligence": 4
+		"intelligence": 4,
+		"habitat_city": "Hobart"
 	},
 	{
 		"id": 32,
@@ -606,6 +637,7 @@
 		"max_length": 230,
 		"litter_size": 12,
 		"continents": "Asia, Africa",
-		"intelligence": 3
+		"intelligence": 3,
+		"habitat_city": "New Delhi"
 	}
 ]
