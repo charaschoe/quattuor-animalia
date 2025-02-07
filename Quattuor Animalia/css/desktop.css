@@ -50,3 +50,7 @@ nav ul li a {
 		grid-template-columns: 1fr; /* 1 Spalte bei kleineren Bildschirmen */
 	}
 }
+
+#card-container {
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
