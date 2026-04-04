@@ -38,20 +38,5 @@
 			<!-- Hier werden die Karten dynamisch eingefügt -->
 		</main>
 		<script src="main.js"></script>
-		<script>
-			$(document).ready(function () {
-				$("#group-toggle").on("click", function () {
-					$("body").toggleClass("dark-mode");
-				});
-
-				$("#home-link").on("click", function () {
-					confetti({
-						particleCount: 100,
-						spread: 70,
-						origin: { y: 0.6 },
-					});
-				});
-			});
-		</script>
 	</body>
 </html>
