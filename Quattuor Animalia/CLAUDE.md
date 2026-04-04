@@ -10,33 +10,15 @@ python3 -m http.server 8080
 # Note: weather requires Vercel dev or production for /api/weather proxy
 ```
 
-## Vercel Configuration
-### Environment Variables
-- `OPENWEATHER_API_KEY` — OpenWeather API key
-
-### Serverless Functions
-- `api/weather.mjs` — Proxies `/api/weather?city=XXX` to OpenWeather, keeps API key server-side
-
-## Project Structure
+### Local Dev with Serverless Functions
+```bash
+npx vercel dev          # Routes api/weather.mjs correctly
 ```
-quattuor-animalia/
-├── api/weather.mjs         # Vercel serverless proxy (OpenWeather)
-├── .env.example            # Template for OPENWEATHER_API_KEY
-├── README.md
-├── Quattuor Animalia/
-│   ├── index.html          # Main page
-│   ├── card.html           # Static card preview/template (DEAD FILE, development reference only)
-│   ├── animaldata.json     # 32 animals, all numeric fields are proper numbers
-│   ├── main.js             # Card generation, shuffle, event handlers
-│   ├── js/weather.js       # Weather UI (calls /api/weather proxy)
-│   ├── css/
-│   │   ├── style.css       # Card styles, group colors, all component rules
-│   │   ├── desktop.css     # Media: screen AND (min-width: 768px) → auto-fit grid
-│   │   └── mobile.css      # Media: screen AND (max-width: 767px) → single column
-│   └── images/
-│       ├── animal images/  # a1.jpg..h4.jpg (32 images, group letter + number)
-│       └── icons/          # 6 stat icon PNGs
-```
+
+## Linear Integration
+- Bug fixes tracked in [Quattuor Animalia: Bug Fixes](https://linear.app/jw-private/project/quattuor-animalia-bug-fixes-55776ceb1f1e)
+- Always add "Claude Code" label to auto-created issues
+- Assign to Jonas Wienberg (ID: `5e4ef822-9d12-4bb1-b487-2d9a5105adc7`)
 
 ## TODO
 
@@ -44,10 +26,10 @@ quattuor-animalia/
 `main.js` has a commented-out weather-box injection block. To re-enable:
 1. Uncomment the weather-box append in `generateCards()` in `main.js`
 2. The template: `<div class="weather-box"><span class="temperature-text">--°</span></div>`
-3. `weather.js` already listens for `cardsRemixed` and handles updates automatically
+3. `main.js` dispatches `cardsRemixed` event; `js/weather.js` already listens for it
 
 ### Performance optimization
-- `weather.js` re-fetches `animaldata.json` on every `updateWeather` call — could cache globally once and reuse across cards
+- `weather.js` re-fetches `animaldata.json` on every `updateWeather` call — could cache globally once
 
 ## Gotchas
 - `card.html` is **NOT** dynamically loaded via AJAX. It's just a static HTML preview. Cards are generated in `main.js` from `animaldata.json`.
@@ -55,3 +37,7 @@ quattuor-animalia/
 - The `#` in `index.html` (`<a href="#">`) causes page scroll-to-top on every button click.
 - Numeric fields in `animaldata.json` are all proper numbers (German comma notation was fixed).
 - CSS uses media-attribute loading: desktop.css loads at min-width: 768px, mobile.css at max-width: 767px.
+
+## Deployment
+- Push to `main` branch deploys to Vercel automatically
+- Remote: `https://github.com/charaschoe/quattuor-animalia.git`
