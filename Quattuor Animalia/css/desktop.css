@@ -1,7 +1,6 @@
 /* Globales Styling */
 body {
 	margin: 0;
-	padding-top: 110px; /* Platz für den fixierten Header, Höhe anpassen falls nötig */
 	font-family: "Roboto", sans-serif;
 }
 
@@ -31,9 +30,12 @@ nav ul {
 	gap: 1rem;
 }
 
-nav ul li a {
+nav ul li button {
 	color: white;
 	text-decoration: none;
+	background: none;
+	border: none;
+	cursor: pointer;
 }
 
 

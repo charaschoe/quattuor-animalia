@@ -71,7 +71,7 @@ $(document).ready(() => {
 		}
 
 		// Event Handlers
-		$("#home-link").click((e) => {
+		$("#home-link").on("click", (e) => {
 			e.preventDefault();
 			generateCards(false);
 			confetti({
@@ -81,7 +81,7 @@ $(document).ready(() => {
 			});
 		});
 
-		$("#group-toggle").click((e) => {
+		$("#group-toggle").on("click", (e) => {
 			e.preventDefault();
 			generateCards(true);
 		});
