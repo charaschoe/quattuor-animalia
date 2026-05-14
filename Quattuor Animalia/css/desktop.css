@@ -2,6 +2,7 @@
 body {
 	margin: 0;
 	font-family: "Roboto", sans-serif;
+	padding-top: 6rem;
 }
 
 /* Fixierter Header */
@@ -15,6 +16,10 @@ header {
 	padding: 1.5rem; /* Padding vergrößern */
 	z-index: 1000;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Schatten vergrößern */
+}
+
+main {
+	scroll-margin-top: 6rem;
 }
 
 header h1 {

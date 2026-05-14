@@ -24,6 +24,9 @@ $(document).ready(() => {
 					.addClass(`group-${data.group.toLowerCase()}`)
 					.text(`${data.group}${data.group_number}`));
 				cardContent.append($('<div>').addClass('card-title border-bottom').text(data.name_german));
+				cardContent.append($('<div>')
+					.addClass('weather-box')
+					.append($('<span>').addClass('temperature-text').text('--°')));
 
 				// Bild
 				const img = $('<img>')
@@ -65,9 +68,7 @@ $(document).ready(() => {
 				cardContainer.append(cardWrapper);
 			});
 
-			// TODO: Add weather-box to each card showing current temperature
-			// for the animal's habitat_city. Weather updates via /api/weather proxy.
-			$(document).trigger("cardsRemixed");
+			document.dispatchEvent(new CustomEvent("cardsRemixed"));
 		}
 
 		// Event Handlers

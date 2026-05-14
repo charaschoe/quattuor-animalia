@@ -11,10 +11,17 @@ export default async function handler(req) {
 
   const apiKey = process.env.OPENWEATHER_API_KEY;
   if (!apiKey) {
-    return new Response(JSON.stringify({ error: "API key not configured" }), {
-      status: 500,
-      headers: { "Content-Type": "application/json" },
-    });
+    return new Response(
+      JSON.stringify({
+        temperature: null,
+        unavailable: true,
+        error: "API key not configured",
+      }),
+      {
+        status: 200,
+        headers: { "Content-Type": "application/json" },
+      }
+    );
   }
 
   try {
